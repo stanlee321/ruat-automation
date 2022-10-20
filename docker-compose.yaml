@@ -1,0 +1,29 @@
+version: "3.1"
+
+services:
+  ######################
+  # USER DOMAIN SERVICES
+  ######################
+  ocr-api-service:
+    image: stanlee321/captcha-ocr-ultra:v1.0
+    ports:
+      - 8000:8000
+    healthcheck:
+      test: exit 0
+
+  ######################
+  # # gamification Services
+  # impuestos-service:
+  #   image: impuestos-bot
+  #   build: .
+  #   ports:
+  #     - 8000:8000
+  #   env_file: .env
+  #   environment:
+  #     OCR_API_URL: http://ocr-api-service:8000/predict
+  #   depends_on:
+  #     ocr-api-service:
+  #       condition: service_healthy
+  #   links:
+  #     - ocr-api-service
+  #   restart: always
