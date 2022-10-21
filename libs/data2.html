@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta HTTP-EQUIV="Refresh" CONTENT="900; URL=/Principal.jsf?nocid=true" /><link type="text/css" rel="stylesheet" href="/javax.faces.resource/theme.css.jsf?ln=primefaces-aristo" /><script type="text/javascript" src="/javax.faces.resource/jquery/jquery.js.jsf?ln=primefaces&amp;v=7.0"></script><script type="text/javascript" src="/javax.faces.resource/jquery/jquery-plugins.js.jsf?ln=primefaces&amp;v=7.0"></script><script type="text/javascript" src="/javax.faces.resource/core.js.jsf?ln=primefaces&amp;v=7.0"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/components.css.jsf?ln=primefaces&amp;v=7.0" /><script type="text/javascript" src="/javax.faces.resource/components.js.jsf?ln=primefaces&amp;v=7.0"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/watermark/watermark.css.jsf?ln=primefaces&amp;v=7.0" /><script type="text/javascript" src="/javax.faces.resource/watermark/watermark.js.jsf?ln=primefaces&amp;v=7.0"></script><script type="text/javascript" src="/javax.faces.resource/keyfilter/keyfilter.js.jsf?ln=primefaces&amp;v=7.0"></script><script type="text/javascript" src="/javax.faces.resource/captcha/captcha.js.jsf?ln=primefaces&amp;v=7.0"></script><link type="text/css" rel="stylesheet" href="/javax.faces.resource/scrollpanel/scrollpanel.css.jsf?ln=primefaces&amp;v=7.0" /><script type="text/javascript" src="/javax.faces.resource/scrollpanel/scrollpanel.js.jsf?ln=primefaces&amp;v=7.0"></script><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='es';}</script>
+	<meta charset="utf-8" />
+	<meta name="title" content="RUAT" />
+	<meta name="DC.Title" content="RUAT" />
+	<meta http-equiv="title" content="RUAT" />
+	<meta name="keywords" content="Bolivia vehiculos administracion tributaria municipal consultas deudas registro contribuyente inmuebles RUAT La Paz " />
+	<meta http-equiv="keywords" content="Bolivia vehiculos administracion tributaria municipal consultas deudas registro contribuyente inmuebles RUAT la Paz " />
+	<meta name="description" content="Es una Institución Pública Descentralizada, no lucrativa con personería jurídica, patrimonio propio y autonomía de gestión administrativa, financiera, legal y técnica relacionada con la Administración Tributaria de Vehículos Automotores, Bienes Inmuebles, Actividades Económicas, Tasas y Otros Ingresos en el Estado Plurinacional de Bolivia." />
+	<meta http-equiv="description" content="Es una Institución Pública Descentralizada, no lucrativa con personería jurídica, patrimonio propio y autonomía de gestión administrativa, financiera, legal y técnica relacionada con la Administración Tributaria de Vehículos Automotores, Bienes Inmuebles, Actividades Económicas, Tasas y Otros Ingresos en el Estado Plurinacional de Bolivia." />
+	<meta http-equiv="DC.Description" content="Es una Institución Pública Descentralizada, no lucrativa con personería jurídica, patrimonio propio y autonomía de gestión administrativa, financiera, legal y técnica relacionada con la Administración Tributaria de Vehículos Automotores, Bienes Inmuebles, Actividades Económicas, Tasas y Otros Ingresos en el Estado Plurinacional de Bolivia." />
+	<meta name="vw96.objectype" content="Index" />
+	<meta name="resource-type" content="Index" />
+	<meta name="distribution" content="all" />
+	<meta name="robots" content="all" />
+
+	<title>:: RUAT - REGISTRO UNICO PARA LA ADMINISTRACION
+		TRIBUTARIA MUNICIPAL ::</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<LINK REL="SHORTCUT ICON" HREF="/resources/img/logo_ruat_pestania.png?0.40758110850370843" />
+
+
+	<link rel="stylesheet" href="/resources/css/effects.min.css?0.40758110850370843" />
+	<link rel="stylesheet" href="/resources/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/resources/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="/resources/css/dock.css?0.40758110850370843" />
+	<link rel="stylesheet" href="/resources/css/main.css?0.40758110850370843" />
+	<link rel="stylesheet" href="/resources/css/movileapps.css?0.40758110850370843" />
+
+	<script src="/resources/js/bootstrap.min.js?0.40758110850370843"></script>
+	<script src="/resources/js/force.browser.js?0.40758110850370843"></script>
+
+	<script type="text/javascript">    
+		//Mozilla		
+		
+		var redireccnarPagina = false; 
+		if(($.browser.mozilla)){			
+			if(16 > parseFloat($.browser.version)){
+				redireccnarPagina=true;				
+			}
+		} 
+		//Chrome
+		if(($.browser.webkit)){			
+			if(15 > parseFloat($.browser.version)){
+				redireccnarPagina=true;
+			}
+		} 
+		//InternetExplorer
+		if(($.browser.msie)){
+			if(10 > parseFloat($.browser.version)){
+				redireccnarPagina=true;
+			}
+		}
+		//Safari
+		if(($.browser.safari)){
+			var version = $.browser.version;
+			if(version.indexOf('.')>-1){
+				version = version.substring(0, version.indexOf('.'));
+			}
+			if(4 > parseFloat(version)){
+				redireccnarPagina=true;
+			} else {
+				redireccnarPagina=false;
+			}
+		}
+		
+
+		if(redireccnarPagina){
+			window.location='/ValidaVersion.jsf';
+		} 
+
+		//evita el pegado en los campos de entrada
+		$(document).ready(function(){
+		   $('*').bind("paste",function(e) {
+		      e.preventDefault();
+		   });
+	    });	
+
+		//muestra el comunicado en la pagina principal y los modulos de consulta deuda de todos los rubros 
+		$(function(){
+			try{
+				$('#modalComunicado').modal();
+			}catch (e){
+				//
+			}
+		});	
+	
+	</script>
+
+	<style>
+		.circulo {
+			height: 100px;
+			width: 100px;
+			display: table-cell;
+			text-align: center;
+			font-size: 16px;
+			vertical-align: middle;
+			border-radius: 50%;
+			background: #8CC657;
+		}
+	</style></head><body class="fondo" style="overflow-x: hidden;">
+	<div id="version" style="display: none;">
+		Versión:
+		
+		Fecha Generación:
+		07/10/2022 20:36:42
+	</div>
+		
+	<div class="top">
+		<div id="banner" class="visible-sm visible-md  visible-lg">
+			<span class="derecha"> <a href="/Principal.jsf"> <img src="/resources/img/banner/banner_der-pequenio.png" class="img-responsive" alt="banner" />
+			</a>
+			</span> <span class="izquierda"><a href="/Principal.jsf">
+					<img src="/resources/img/banner/banner_izq.png" class="img-responsive" alt="banner" />
+			</a> </span>
+
+			<div class="clear"></div>
+		</div>
+			<nav class="navbar navbar-default" id="menu-cabecera">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="banner_movil visible-xs">
+							<a href="/Principal.jsf"> <img src="/resources/img/banner/banner_mob.png" class="img-responsive" alt="banner" style="position: absolute; width: 100%; height: 50px;" /> <img src="/resources/img/banner/logo_ruat.png" alt="RUAT" style="position: absolute; width: 170px; margin-top: 4px;" />
+							</a>
+						</div>
+
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav" style="margin-left: -15px; margin-right: 0px">
+							<li><a href="/Principal.jsf"><span class="glyphicon glyphicon-home"></span></a></li>
+							<li><a href="/vehiculos/MenuVehiculos.jsf">Vehículos</a></li>
+							<li><a href="/inmuebles/MenuInmuebles.jsf">Inmuebles</a></li>
+							<li><a href="/actividadeseconomicas/MenuActividadesEconomicas.jsf">Actividades
+									Económicas</a></li>
+
+							<li><a href="/tasas/MenuTasasYotrosIngresos.jsf">Tasas
+									y Otros Ingresos</a></li>
+									
+							<li><a href="/ingresosnotributarios/MenuIngresosNoTributarios.jsf">Ingresos No Tributarios</a></li>
+
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-image: linear-gradient(to bottom, #1d5874 0, #1d5874 100%);">Institucional</a>
+								<ul class="dropdown-menu" id="submenu-infinstitucional" style="background-color: #1d5874;">
+									<li><a class="menu" href="/informacioninstitucional/MenuInformacionInstitucional.jsf">Información
+											Institucional</a></li>
+									<li><a class="menu" href="/transparencia/MenuTransparencia.jsf">Transparencia</a></li>
+									<li><a class="menu" href="/informaciongeneral/MenuInformacionGeneral.jsf">Información
+											General</a></li>
+									<li><a class="menu" href="/servicios/MenuServicios.jsf">Servicios</a></li>
+								</ul></li>
+							<li>
+<form id="j_idt25" name="j_idt25" method="post" action="/vehiculos/consultageneral/InicioBusquedaVehiculo.jsf?cid=2" class="navbar-form navbar-right" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt25" value="j_idt25" />
+<input id="j_idt25:txtBuscarInt" name="j_idt25:txtBuscarInt" type="text" style="padding-left: 10px; width:100px; height: 30px; margin-top: 2px" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all bordes_curvas_busqueda_texto" aria-required="true" maxlength="100" /><script id="j_idt25:txtBuscarInt_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_j_idt25_txtBuscarInt",{id:"j_idt25:txtBuscarInt",maxlength:100});});</script><script id="j_idt25:j_idt26_s" type="text/javascript">$(function(){PrimeFaces.cw("Watermark","widget_j_idt25_j_idt26",{id:"j_idt25:j_idt26",value:"Buscar",target:"j_idt25:txtBuscarInt"});});</script><button id="j_idt25:j_idt27" name="j_idt25:j_idt27" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only bordes_curvas_busqueda_boton" onclick="PrimeFaces.ab({s:&quot;j_idt25:j_idt27&quot;,f:&quot;j_idt25&quot;});return false;" style="height: 30px;" type="submit"><span class="ui-button-icon-left ui-icon ui-c ui-icon-search"></span><span class="ui-button-text ui-c">ui-button</span></button><script id="j_idt25:j_idt27_s" type="text/javascript">$(function(){PrimeFaces.cw("CommandButton","widget_j_idt25_j_idt27",{id:"j_idt25:j_idt27"});});</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="5247947258203084953:6250281658957012518" autocomplete="off" />
+</form>
+							</li>
+						</ul>
+						
+					</div>
+				</div>
+			</nav>
+		<span class="derecha-grande"> <a href="/Principal.jsf"> <img src="/resources/img/banner/banner_der-grande.png" class="img-responsive" alt="banner" />
+		</a>
+		</span> 
+	</div>
+
+
+
+	<div class="center_content"><div id="j_idt31" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container"><div class="ui-dialog-content ui-widget-content" id="j_idt31_content"><img id="j_idt32" src="/resources/img/ai.gif?pfdrid_c=true" alt="" /></div></div><script id="j_idt31_s" type="text/javascript">$(function(){PrimeFaces.cw("Dialog","statusPanel",{id:"j_idt31",draggable:false,resizable:false,modal:true});});</script><div id="j_idt33"></div><script id="j_idt33_s" type="text/javascript">$(function(){PrimeFaces.cw("AjaxStatus","widget_j_idt33",{id:"j_idt33",start:function(){PF('statusPanel').show()},success:function(){PF('statusPanel').hide()}});});</script>
+	<div id="busqueda">
+		<script type="text/javascript">
+			var solicitarCaptcha=false;
+			var identificador='2787APK';
+			var criterio='PTA';
+			var certificadoPropiedad='';
+		</script>
+		<ol class="breadcrumb">
+			<li><a href="/Principal.jsf"> <span class="glyphicon glyphicon-home"></span> Inicio
+			</a></li>
+			<li><a href="/vehiculos/MenuVehiculos.jsf">Vehículos</a></li>
+			<li class="active">Consulta Deuda</li>
+		</ol>
+
+		<div class="container form-horizontal">
+
+	<div class="row text-center"><label style="padding-right: 10px;" class="titulo">Consulta Deuda</label>
+	</div>
+	<div class="row text-center"><label style="padding: 0px 0px 20px 0px;" class="subtitulo">Búsqueda Vehículo</label>
+	</div>
+<form id="busqueda:frmBusquedaVehiculo" name="busqueda:frmBusquedaVehiculo" method="post" action="/vehiculos/consultageneral/InicioBusquedaVehiculo.jsf?cid=2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="busqueda:frmBusquedaVehiculo" value="busqueda:frmBusquedaVehiculo" />
+<span id="busqueda:frmBusquedaVehiculo:j_idt45"></span><script type="text/javascript">$(function(){PrimeFaces.focus(null, 'busqueda:frmBusquedaVehiculo');});</script>
+	<div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda" class="panel panel-primary">
+		<div class="panel-heading">
+			<h3 class="subtitulo">Datos Búsqueda
+			</h3>
+		</div>
+		<div class="panel-body" style="color: #09485b">
+	<div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt46"><div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt46:j_idt48" class="ui-messages ui-widget" aria-live="polite"></div>
+	</div>
+
+	<div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio" class="form-group" style="clear: both;">
+		<div class="col-sx-12 col-sm-5  control-label"><label id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:j_idt52" class="ui-outputlabel ui-widget textoNegrita" for="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_focus">Criterio<span class="ui-outputlabel-rfi">*</span></label>
+		</div>
+ 
+		<div class="col-sx-12 col-sm-3"><div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox" class="ui-selectonemenu ui-widget ui-state-default ui-corner-all form-control" title="Seleccione el Criterio PLACA PTA, POLIZA, PLACA ANTERIOR O COPO en base al cual se realizará la búsqueda." role="combobox" aria-haspopup="true" aria-expanded="false"><div class="ui-helper-hidden-accessible"><input id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_focus" name="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_focus" type="text" autocomplete="off" aria-expanded="false" aria-labelledby="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:j_idt52" /></div><div class="ui-helper-hidden-accessible"><select id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_input" name="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_input" tabindex="-1" aria-hidden="true" onchange="PrimeFaces.bcn(this,event,[function(event){},function(event){PrimeFaces.ab({s:&quot;busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox&quot;,e:&quot;change&quot;,f:&quot;busqueda:frmBusquedaVehiculo&quot;,p:&quot;busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox&quot;,u:&quot;busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador&quot;,onco:function(xhr,status,args){verificarCambio();;},pa:[{name:&quot;disableValidation&quot;,value:&quot;true&quot;}]});}]);"><option value="PTA" selected="selected" data-escape="true">PLACA PTA</option><option value="POL" data-escape="true">POLIZA</option><option value="PANT" data-escape="true">PLACA ANTERIOR</option><option value="COPO" data-escape="true">COPO</option></select></div><label id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_label" class="ui-selectonemenu-label ui-inputfield ui-corner-all">&nbsp;</label><div class="ui-selectonemenu-trigger ui-state-default ui-corner-right"><span class="ui-icon ui-icon-triangle-1-s ui-c"></span></div><div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_panel" class="ui-selectonemenu-panel ui-widget ui-widget-content ui-corner-all ui-helper-hidden ui-shadow ui-input-overlay"><div class="ui-selectonemenu-items-wrapper" style="max-height:200px"><ul id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_items" class="ui-selectonemenu-items ui-selectonemenu-list ui-widget-content ui-widget ui-corner-all ui-helper-reset" role="listbox"><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="PLACA PTA" tabindex="-1" role="option">PLACA PTA</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="POLIZA" tabindex="-1" role="option">POLIZA</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="PLACA ANTERIOR" tabindex="-1" role="option">PLACA ANTERIOR</li><li class="ui-selectonemenu-item ui-selectonemenu-list-item ui-corner-all" data-label="COPO" tabindex="-1" role="option">COPO</li></ul></div></div></div><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox_s" type="text/javascript">$(function(){PrimeFaces.cw("SelectOneMenu","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_criterio_ruatComboBox",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox",appendTo:"@(body)",behaviors:{change:function(ext,event) {PrimeFaces.ab({s:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox",e:"change",f:"busqueda:frmBusquedaVehiculo",p:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:ruatComboBox",u:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador",onco:function(xhr,status,args){verificarCambio();;},pa:[{name:"disableValidation",value:"true"}]},ext);}}});});</script>
+			
+		</div>
+		
+		
+			
+		
+		<div class="col-sx-12 col-sm-1">
+				<div style="margin-top:4px;">
+					<img alt="ayuda" class="puntero" src="/resources/img/iconos/ico_ayuda_verde.png" onclick="$('#modalAyudaIdentificador').modal();" />						
+				</div>
+		</div>
+
+		<div class="col-sx-12 col-sm-3"><div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:j_idt58" aria-live="polite" class="ui-message"></div><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:j_idt58_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_criterio_j_idt58",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio:j_idt58",target:"busqueda:frmBusquedaVehiculo:pnl\-datosbusqueda:criterio:ruatComboBox_focus"});});</script>
+		</div>
+
+	</div><span id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador">
+	<div class="espacioAltura">
+		<div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta" class="form-group " style="clear: both;">
+			<div class="col-sx-12 col-sm-5  control-label"><label id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt61" class="ui-outputlabel ui-widget textoNegrita" for="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:ruatInputText">Placa Pta<span class="ui-outputlabel-rfi">*</span></label>
+			</div>
+
+			<div class="col-sx-12 col-sm-3 col-md-3">
+
+				<div><input id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:ruatInputText" name="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:ruatInputText" type="text" value="2787APK" class="ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all form-control" autocomplete="off" maxlength="8" title="Ingrese el número de Placa PTA, Póliza, Plaza Anterior o Número de COPO de su vehículo, según el criterio que seleccionará." onkeyup="return verificarCambio();" /><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:ruatInputText_s" type="text/javascript">$(function(){PrimeFaces.cw("InputText","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_identificador_placapta_ruatInputText",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:ruatInputText",maxlength:8});});</script>
+
+				</div><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt66_s" type="text/javascript">$(function(){PrimeFaces.cw("KeyFilter","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_identificador_placapta_j_idt66",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt66",target:"busqueda:frmBusquedaVehiculo:pnl\-datosbusqueda:identificador\-placapta:ruatInputText",mask:"alphanum",preventPaste:true});});</script>
+			</div>
+
+			<div class="col-sx-12 col-sm-1 col-md-2">
+				<div style="margin-top: 4px;">
+					<img alt="ayuda" class="ocultar" src="/resources/img/iconos/ico_ayuda_verde.png" onclick="$('#').modal();" />
+				</div>
+			</div>
+
+			<div class="col-sx-12 col-sm-3"><div id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt71" aria-live="polite" class="ui-message"></div><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt71_s" type="text/javascript">$(function(){PrimeFaces.cw("Message","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_identificador_placapta_j_idt71",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:identificador-placapta:j_idt71",target:"busqueda:frmBusquedaVehiculo:pnl\-datosbusqueda:identificador\-placapta:ruatInputText"});});</script>
+			</div>
+		</div>
+
+	</div></span><span id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:captcha"></span>
+
+					<div class="areabotones"><button id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt140" name="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt140" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left boton-primario" onclick="PrimeFaces.ab({s:&quot;busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt140&quot;,f:&quot;busqueda:frmBusquedaVehiculo&quot;,u:&quot;busqueda&quot;});return false;" type="submit"><span class="ui-button-icon-left ui-icon ui-c btn-buscar"></span><span class="ui-button-text ui-c">Buscar</span></button><script id="busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt140_s" type="text/javascript">$(function(){PrimeFaces.cw("CommandButton","widget_busqueda_frmBusquedaVehiculo_pnl_datosbusqueda_j_idt140",{id:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:j_idt140"});});</script>
+					</div>
+		</div>
+	</div>
+
+				<script type="text/javascript">
+
+					window.onload = function() {
+						if(certificadoPropiedad ==""){
+							limpiarPassword();
+						}else{
+							var vCertPropiedad=document.getElementById("busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:certificadoPropiedad:ruatInputText");
+							if(vCertPropiedad){
+								vCertPropiedad.value=certificadoPropiedad;
+							}
+						}
+					}
+
+					function cambiarTypePass(){
+						var vCertPropiedad=document.getElementById("busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:certificadoPropiedad:ruatInputText");
+						if(vCertPropiedad){
+							vCertPropiedad.setAttribute("type","password");
+						}
+					}
+
+					function limpiarPassword(){
+						var vCertPropiedad=document.getElementById("busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:certificadoPropiedad:ruatInputText");
+						if(vCertPropiedad){
+							vCertPropiedad.value="";
+							vCertPropiedad.setAttribute("type","text");
+						}
+					}
+				
+					function verificarCambio(){
+						if(!solicitarCaptcha){
+							var existeCambios=false;
+							if($("input[id*='identificador-']").val()!=identificador){
+								actualizarBusqueda();
+								$("input[id*='certificadoPropiedad']").val("");
+								existeCambios=true;
+							} else if($("select[id*='criterio']").val()!=criterio){
+								actualizarBusquedaMenosCombos();
+								existeCambios=true;
+							} else if(certificadoPropiedad !=""){
+								if($("input[id*='certificadoPropiedad']").val()!=certificadoPropiedad){
+									actualizarBusquedaMenosCombos();
+									existeCambios=true;
+								}
+							}
+							if(existeCambios){
+								solicitarCaptcha=true;
+							}
+						}
+					}
+				</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="5247947258203084953:6250281658957012518" autocomplete="off" />
+</form>
+<form id="busqueda:j_idt151" name="busqueda:j_idt151" method="post" action="/vehiculos/consultageneral/InicioBusquedaVehiculo.jsf?cid=2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="busqueda:j_idt151" value="busqueda:j_idt151" />
+<script id="busqueda:j_idt151:j_idt152" type="text/javascript">actualizarBusqueda = function() {PrimeFaces.ab({s:"busqueda:j_idt151:j_idt152",f:"busqueda:j_idt151",u:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:criterio busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:captcha busqueda:frmResultadoBusqueda",pa:arguments[0]});}</script><script id="busqueda:j_idt151:j_idt153" type="text/javascript">actualizarBusquedaMenosCombos = function() {PrimeFaces.ab({s:"busqueda:j_idt151:j_idt153",f:"busqueda:j_idt151",u:"busqueda:frmBusquedaVehiculo:pnl-datosbusqueda:captcha busqueda:frmResultadoBusqueda",pa:arguments[0]});}</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="5247947258203084953:6250281658957012518" autocomplete="off" />
+</form>
+<form id="busqueda:frmResultadoBusqueda" name="busqueda:frmResultadoBusqueda" method="post" action="/vehiculos/consultageneral/InicioBusquedaVehiculo.jsf?cid=2" class="form-horizontal" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="busqueda:frmResultadoBusqueda" value="busqueda:frmResultadoBusqueda" />
+<input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="5247947258203084953:6250281658957012518" autocomplete="off" />
+</form>
+		</div>
+<form id="busqueda:j_idt173" name="busqueda:j_idt173" method="post" action="/vehiculos/consultageneral/InicioBusquedaVehiculo.jsf?cid=2" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="busqueda:j_idt173" value="busqueda:j_idt173" />
+
+	<div class=" container-fluid arealink"><a id="busqueda:j_idt173:j_idt174:j_idt175" href="#" class="ui-commandlink ui-widget lnk-nuevaBusqueda" onclick="PrimeFaces.ab({s:&quot;busqueda:j_idt173:j_idt174:j_idt175&quot;,f:&quot;busqueda:j_idt173&quot;,u:&quot;busqueda&quot;,onco:function(xhr,status,args){limpiarPassword();;}});return false;">Nueva Búsqueda</a>
+	</div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="5247947258203084953:6250281658957012518" autocomplete="off" />
+</form>
+	</div>
+
+	<!--  modal ayuda -->
+    <div class="modal fade" id="modalAyudaIdentificador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-color: #e6e7e8;">
+                <div class="modal-header" style="margin-bottom:40px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"> <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                    </button>
+                    <div class="clear"></div>
+                    <div class="modal-title">
+                        <div style="margin: auto;">
+
+	<div class="row text-center"><label style="padding-right: 10px;" class="titulo">CONSULTA VEHÍCULOS</label>
+	</div>
+	<div class="row text-center"><label style="padding: 0px 0px 20px 0px;" class="subtitulo">AYUDA</label>
+	</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-body"><div id="busqueda:j_idt179:j_idt180:j_idt182" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+			<b>PLACA PTA:</b> Ingresar el número de PTA (placa actual) sin espacios ni guiones Ej. <b>123ABC</b>
+			Las letras pueden ser mayúsculas o minúsculas indistintamente.
+			<br />
+			<div style="text-align: center">
+				<img src="/resources/img/ayuda/vehiculos/pta.jpg" alt="pta" />
+			</div></div><div id="busqueda:j_idt179:j_idt184:j_idt186" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+			<b>PLACA ANTERIOR: </b> Ingrese el número de placa anterior al reemplaque sin espacios ni guiones Ej. <b>ABC123</b>
+			<br />
+			Las letras pueden ser mayúsculas o minúsculas indistintamente.
+			<br />
+			<br />
+			<div style="text-align: center">
+				<img src="/resources/img/ayuda/vehiculos/placa.jpg" alt="placa" />
+			</div></div><div id="busqueda:j_idt179:j_idt188:j_idt190" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+			<b>POLIZA: </b> Se deberá registrar el número sin espacios ni guiones Ej. <b>050113410</b>
+			<br />
+			<br />
+			<div class="row" id="#centrarContenedor">
+				<div class="col-xs-12 col-sm-6" style="text-align: center">
+					<b class="textoCentrado">Antiguo</b> <br /> <img src="/resources/img/ayuda/vehiculos/polizaantigua.jpg" alt="Poliza Antigua" />
+				</div>
+				<div class="col-xs-12 col-sm-6" style="text-align: center">
+					<b style="">Nuevo</b> <br /> <img src="/resources/img/ayuda/vehiculos/polizanueva.jpg" alt="Poliza Nueva" />
+				</div>
+			</div></div><div id="busqueda:j_idt179:j_idt192:j_idt194" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+			<b>COPO: </b> Se deberá registrar el número sin espacios ni guiones Ej. <b>912345</b>
+			<br />
+			<br />
+			<div class="row" id="#centrarContenedor">
+				<div class="col-xs-12 col-sm-6" style="text-align: center">
+					<b class="textoCentrado">Antiguo</b> <br /> <img src="/resources/img/ayuda/vehiculos/copoantiguo.jpg" alt="Copo Antiguo" />
+				</div>
+				<div class="col-xs-12 col-sm-6" style="text-align: center">
+					<b style="">Nuevo</b> <br /> <img src="/resources/img/ayuda/vehiculos/coponuevo.jpg" alt="Copo Nueva" />
+				</div>
+			</div></div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAyudaCRPVA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-color: #e6e7e8;">
+                <div class="modal-header" style="margin-bottom:40px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"> <span class="glyphicon glyphicon-remove"></span>
+                        </span>
+                    </button>
+                    <div class="clear"></div>
+                    <div class="modal-title">
+                        <div style="margin: auto;">
+
+	<div class="row text-center"><label style="padding-right: 10px;" class="titulo">CONSULTA VEHÍCULOS</label>
+	</div>
+	<div class="row text-center"><label style="padding: 0px 0px 20px 0px;" class="subtitulo">AYUDA</label>
+	</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-body"><div id="busqueda:j_idt215:j_idt216:j_idt222" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+	<div class="row"><label style="margin-bottom: 7px;  margin-top: 10px; margin-left: 5px;" class="subtitulo">NUEVO CRPVA</label>
+	</div>
+			<div class="row" style="margin: 0; text-align: center;">
+				<img src="/resources/img/ayuda/vehiculos/CRPVA_nuevo.png" alt="CRPVA Nuevo" class="img-responsive" />
+			</div></div><div id="busqueda:j_idt215:j_idt224:j_idt230" class="ui-scrollpanel ui-scrollpanel-native ui-widget ui-widget-content ui-corner-all alert alert-info alert-dismissable fuenteRuat" style="border: 1px solid #a8a8a8;">
+	<span class="alert-link subtitulo"></span>
+	<div class="row"><label style="margin-bottom: 7px;  margin-top: 10px; margin-left: 5px;" class="subtitulo">ANTIGUO CRPVA</label>
+	</div>
+			<div class="row" id="centrarContenedor">
+				<img src="/resources/img/ayuda/vehiculos/CRPVA_antiguo_02.png" alt="CRPVA Antiguo" class="img-responsive" />
+			</div>
+			<br />
+			<div class="row" id="centrarContenedor">
+				<img src="/resources/img/ayuda/vehiculos/CRPVA_antiguo_01.png" alt="CRPVA Antiguo" class="img-responsive" />
+			</div></div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+	</div>
+
+	<br />
+	<section>
+		<div class="container sub_footer_frm cortaPalabras">
+
+			<div class="row">
+				<div class="col-xs-12 titulo-paginaPrincipal">Servicios al
+					Cliente</div>
+			</div>
+			<hr />
+			<!-- linea azul -->
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<img src="/resources/img/subfooter/ico_estadistica_azul.png" style="position: absolute;" alt="Estadísticas" class="puntero" onclick="location.href='/serviciosclientes/estadisticaspaginas/InicioEstadisticasPaginas.jsf'" />
+
+						<div class="lnk-sub-footer">
+							<span class="puntero" onclick="location.href='/serviciosclientes/estadisticaspaginas/InicioEstadisticasPaginas.jsf'">Estadísticas</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<img src="/resources/img/subfooter/ico_mapa_azul.png" style="position: absolute;" alt="Mapa del Sitio" class="puntero" onclick="location.href='/informaciongeneral/mapadelsitio/InicioMapaDelSitio.jsf'" />
+
+						<div class="lnk-sub-footer">
+							<span class="puntero" onclick="location.href='/informaciongeneral/mapadelsitio/InicioMapaDelSitio.jsf'">Mapa
+								del Sitio</span>
+						</div>
+					</div>
+
+				</div>
+
+				
+				<div class="col-xs-12 col-sm-4 col-md-4">
+
+
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<img src="/resources/img/subfooter/ico_contacto_azul.png" style="position: absolute;" alt="Contactos" class="puntero" onclick="location.href='/informacioninstitucional/contactos/InicioContactos.jsf'" />
+
+						<div class="lnk-sub-footer">
+							<span class="puntero" onclick="location.href='/informacioninstitucional/contactos/InicioContactos.jsf'">Contactos</span>
+						</div>
+					</div>
+
+				</div>
+				<br /> <br /> <br />
+
+			</div>
+
+		</div>
+	</section>
+
+	<br />
+
+	<footer class="visible-sm visible-md visible-lg">
+		<div class="visible-md visible-lg col-md-4  col-lg-4" style="text-align: left;">
+			Viernes, 21 de Octubre de 2022</div>
+		<div class="col-xs-8" style="text-align: right;">
+			Copyright © RUAT. Todos los derechos reservados. La Paz - Bolivia.
+			<span style="margin-left:15px;">v3.162.139</span>
+		</div>
+	</footer>
+	<style>
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000
+}
+
+.espacio {
+	padding-top: 50px; /*Alto del header*/
+}
+</style>
+	<script>
+//menu fijo
+//window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("menu-cabecera");
+var contenidoCentral = document.getElementById("contenido-central");
+
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+    contenidoCentral.classList.add("espacio");
+  } else {
+    header.classList.remove("sticky");
+    contenidoCentral.classList.remove("espacio");
+  }
+  
+}
+</script></body>
+</html>
